@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sun {
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    background: rgb(236,255,0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100%;
+    box-shadow: 0 0 300px 250px rgba(255, 231, 76, 0.6);
+  }
+  @keyframes moving {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+  .orbit-mercury {
+      width: 326px;
+      height: 326px;
+      border: 3px solid black;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  .mercury {
+  
+      width: 10px;
+      height: 10px;
+      background-color: black;
+      position: absolute;
+      top: calc(50% + 110px);
+      left: calc(50% + 110px);
+      border-radius: 100%;
+      animation: moving 4.8s linear infinite;
+      transform-origin: calc(-900% - 20px) calc(-900% - 20px);
+    }
+
+    .orbit-venera {
+        width: 465px;
+        height: 465px;
+        border: 3px solid black;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .venera{
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        top: calc(50% + 155px);
+        left: calc(50% + 155px);
+        border-radius: 100%;
+        animation: moving 12.8s linear infinite;
+        transform-origin: calc(-675% - 20px) calc(-675% - 20px);
+        
+      }
+
+      .earth {
+       z-index: 1;
+       width: 22px;
+        height: 22px;
+        background-color: #0a466b;
+        position: absolute;
+        top: calc(50% + 205px);
+        left: calc(50% + 205px);
+        border-radius: 50%;
+          animation: moving 22.5s linear infinite;
+          transform-origin: calc(-840% - 20px) calc(-840% - 20px);
+      }
+      
+      .orbit-earth {
+        width: 603px;
+        height: 603px;
+        border: 3px solid black;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .marc {
+       z-index: 1;
+        width: 15px;
+        height: 15px;
+        background-color: #db5625;
+        position: absolute;
+        top: calc(50% + 255px);
+        left: calc(50% + 255px);
+        border-radius: 50%;
+        animation: moving 37.7s linear infinite;
+        transform-origin: calc(-1570% - 20px) calc(-1570% - 20px);
+      }
+      
+      .marc-orbit {
+        width: 743px;
+        height: 743px;
+        border: 3px solid black;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
